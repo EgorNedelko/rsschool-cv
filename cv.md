@@ -57,20 +57,25 @@ No commercial projects so far. As part of self-education, I wrote a console vers
 ```java
 
 public void calculate_bivector_queen_direction (String queenLoc, String extraLoc) {
-        ArrayList<String> path1 = new ArrayList<String> ();
-        ArrayList<String> path2 = new ArrayList<String> ();
-        for (ArrayList<String> dir : tool.directions) {
-            if ((dir.contains(queenLoc)) && (dir.contains(extraLoc))) {
-                float queenIndex = (float) dir.indexOf(queenLoc);
-                for (float i = queenIndex + 1; i < dir.size (); i++) {
-                    path1.add (dir.get ( (int) i)); } 
-                tool.queenFronts.add (path1);
-                for (float i = queenIndex - 1; i >= 0; i--) {
-                    path2.add (dir.get ( (int) i)); }   
-                tool.queenFronts.add (path2);
-            }
+    ArrayList<String> path1 = new ArrayList<String> ();
+    ArrayList<String> path2 = new ArrayList<String> ();
+
+    for (ArrayList<String> dir : tool.directions) {
+        if ((dir.contains(queenLoc)) && (dir.contains(extraLoc))) {
+            float queenIndex = (float) dir.indexOf(queenLoc);
+
+            for (float i = queenIndex + 1; i < dir.size (); i++) {
+                path1.add (dir.get ( (int) i));
+            } 
+            tool.queenFronts.add (path1);
+            
+            for (float i = queenIndex - 1; i >= 0; i--) {
+                path2.add (dir.get ( (int) i));
+            }   
+            tool.queenFronts.add (path2);
         }
     }
+}
 
 ```   
 ---
