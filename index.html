@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Egor Nedelko</title>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="wrapper">
+    <header class="header">
+        <h1>Junior Front-End Developer</h1>
+    </header>
+    <main>
+    <section class="name">
+        <h2>1. Name</h2>
+        <p class="name__content">Egor Nedelko</p>
+    </section>
+    <section class="contact-info">
+        <h2>2. Contact Info</h2>
+        <a href="mailto:gojiramedia@gmail.com">Email</a>
+        <p>Telegram: @egornedelko</p>
+    </section>
+    <section class="summary">
+        <h2>3. Summary</h2>
+        <p>I’m an aspiring web developer who’s very much interested in computer science in general. My current goal is to become a well-rounded specialist in the front-end field. Once I’m there and gained enough experience, perhaps full-stack is going to be the next landmark for me. I’m fond of learning new things, challenging tech inspires me.</p>
+    </section>
+    <section class="skills">
+        <h2>4. Skills</h2>
+        <ul class="skills__content">
+            <li>HTML, CSS, JS, Git</li>
+            <li>OOP (Java)</li>
+            <li>БЭМ</li>
+            <li>Photoshop, Illustrator, Figma</li>
+            <li>Visual Studio Code</li>
+        </ul>
+    </section>
+    <section class="code-example">
+        <h2>5. Code example</h2>
+        <pre><code>
+                window.onload=function() {
+                    canv=document.getElementById("gc");
+                    ctx=canv.getContext("2d");
+                    document.addEventListener("keydown", keyPush);
+                    setInterval(game, 1000/15);
+    
+                    for (var i=0;i < trail.length;i++) {
+                        ctx.fillRect(trail[i].x*gs, trail[i].y*gs, gs-2, gs-2);
+                        if(trail[i].x==px && trail[i].y==py) {
+                            tail = 5;
+                        }
+                    }
+
+                    trail.push({x:px,y:py});
+                       while(trail.length > tail) {
+                         trail.shift();       
+                    }
+                }
+        </code></pre>
+    </section>
+    <section class="experience">
+        <h2>6. Experience</h2>
+        <p>No commercial projects so far. As part of self-education, I wrote a console version of Checkers in Java, which helped me immensely to practice the basics of OOP. Here’s a code example from that project :</p>
+        <pre><code>
+                public void calculate_bivector_queen_direction (String queenLoc, String extraLoc) {
+                    ArrayList<String> path1 = new ArrayList<String> ();
+                    ArrayList<String> path2 = new ArrayList<String> ();
+                
+                    for (ArrayList<String> dir : tool.directions) {
+                        if ((dir.contains(queenLoc)) && (dir.contains(extraLoc))) {
+                            float queenIndex = (float) dir.indexOf(queenLoc);
+                
+                            for (float i = queenIndex + 1; i < dir.size (); i++) {
+                                path1.add (dir.get ( (int) i));
+                            } 
+                            tool.queenFronts.add (path1);
+                            
+                            for (float i = queenIndex - 1; i >= 0; i--) {
+                                path2.add (dir.get ( (int) i));
+                            }   
+                            tool.queenFronts.add (path2);
+                        }
+                    }
+                }  
+        </code></pre>
+    </section>
+    <section class="education">
+        <h2>7. Education</h2>
+        <ul class="education__content">
+            <li>2012-2017 | Minsk State Linguistic University</li>
+            <li>Self-education | HTML Academy, Code-basics, workshops and tutorials</li>
+        </ul>
+    </section>
+    <section class="english-level">    
+        <h2>8. English Level</h2>
+        <p>B2+ High intermediate</p>    
+    </section>
+    </main>
+    </div>
+</body>
+</html>
