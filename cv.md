@@ -1,8 +1,8 @@
-# Junior Front End Developer
+# Junior Front-End Developer
 
 ## 1. Name
 
-Egor Nedelko 
+### Egor Nedelko 
 
 ___
 
@@ -28,7 +28,8 @@ I'm an aspiring web developer who's very much interested in computer science in 
 
 ## 5. Code example  
 
-```javascript 
+```javascript
+
 window.onload=function() {
 canv=document.getElementById("gc");
 ctx=canv.getContext("2d");
@@ -47,12 +48,14 @@ trail.push({x:px,y:py});
      trail.shift();       
    }
 }
+
 ```
 
 ---  
 ## 6. Experience 
 No commercial projects so far. As part of self-education, I wrote a console version of Checkers in Java, which helped me immensely to practice the basics of OOP. Here's a code example from that project :  
-```
+```java
+
 public void calculate_bivector_queen_direction (String queenLoc, String extraLoc) {
         ArrayList<String> path1 = new ArrayList<String> ();
         ArrayList<String> path2 = new ArrayList<String> ();
@@ -68,6 +71,7 @@ public void calculate_bivector_queen_direction (String queenLoc, String extraLoc
             }
         }
     }
+
 ```   
 ---
 
