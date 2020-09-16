@@ -1,1 +1,1 @@
-# rsschool-cv
+# my cv [EgorNedelko.github.io/rsschool-cv](https://EgorNedelko.github.io/rsschool-cv/cv)
