@@ -15,3 +15,22 @@ body {
     max-width: 1024px;
 }
 
+.contact-info__menu,
+.skills__menu,
+.education__menu {
+    list-style: none;
+}
+
+pre {
+    white-space: pre;
+}
+
+code {
+    overflow-x: auto;
+}
+
+/*
+.english-level__text,
+.experience__text {
+    padding-left: 35px;
+} */
